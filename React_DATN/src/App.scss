@@ -1,0 +1,530 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  // user-select: none;
+}
+
+._header-web {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(240, 248, 255, 0.835);
+}
+
+.image-banner,
+.mainmenu-area,
+.scroll_header {
+  transition: all 0.4s;
+}
+
+#search-webSite:checked~.form-webSite {
+  z-index: 100;
+  top: 130px;
+  right: -90%;
+}
+
+.form-webSite {
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+  width: 800px;
+  height: 200px;
+  background: #efefef;
+  top: -300px;
+  right: -90%;
+  transition: all 0.6s;
+
+  input {
+    border: 1px solid rgb(75, 75, 75);
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: 0;
+    margin: 30px 0 0 151px;
+  }
+}
+
+.display-website-search {
+  background: #00000070;
+  position: fixed;
+  z-index: 0;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+}
+
+#search-webSite:checked~.display-website-search {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.nav-left {
+  background: #000;
+}
+
+// css checkout page
+
+.checkout_title {
+  text-align: center;
+  margin: 25px 0px 25px;
+}
+
+.box_shadow {
+  width: 707px;
+  margin: 0px auto 20px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+}
+
+.checkout_products {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.product_thumbnail {
+  width: 15%;
+}
+
+.product_thumbnail-img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ececec;
+}
+
+.product_thumbnail svg {
+  margin: 10px 0px 7px 37px;
+  color: black;
+}
+
+.product_thumbnail svg:hover {
+  cursor: pointer;
+}
+
+.product_name {
+  width: 55%;
+}
+
+.product_name p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.product_size {
+  margin-right: 8px;
+}
+
+.product_quantity {
+  width: 30%;
+  line-height: 100px;
+}
+
+.product_quantity span {
+  display: block;
+  color: #111;
+  font-weight: 700;
+  white-space: nowrap;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  // border-radius: 5px;
+  // width: 50%;
+  // height: 35px;
+  // line-height: 35px;
+  color: black;
+  // margin-left: 100px;
+}
+
+.coupon {
+  margin-top: 10px;
+}
+
+.coupon label {
+  display: flex;
+  color: rgb(0, 204, 255);
+}
+
+.coupon label:hover {
+  cursor: pointer;
+}
+
+.coupon svg {
+  width: 20px;
+  margin-right: 8px;
+  color: rgb(0, 204, 255);
+}
+
+.coupon_inp {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  // overflow: hidden;
+  margin: 10px 0px 20px 0px;
+}
+
+.coupon_inp input {
+  outline: none;
+  width: 80%;
+  padding: 10px;
+  color: #363636;
+}
+
+.coupon_inp button {
+  width: 20%;
+  background-color: rgb(0, 204, 255);
+  color: white;
+  font-weight: 500;
+}
+
+.coupon_inp p {
+  font-size: 14px;
+  color: #777777;
+}
+.coupon_inp span {
+  font-size: 16px;
+  color: #f30c28;
+}
+
+.total_review {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.form_checkout h3 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  overflow: hidden;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.form_checkout label {
+  font-size: 1em;
+  font-weight: 700;
+  color: #222;
+}
+
+.required {
+  color: red;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.form_checkout-inp {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0px 12px;
+  outline: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  color: #333333;
+  margin: 10px 0px 25px 0px;
+  transition: all 0.3s;
+}
+
+.form_checkout-inp:focus {
+  border: none;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.selections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.selection {
+  width: 47.5%;
+}
+
+.selection label {
+  margin-bottom: 10px;
+}
+
+.form_checkout textarea {
+  display: block;
+  width: 100%;
+  height: 94px;
+  min-height: auto;
+  outline: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  color: #333333;
+  padding: 12px;
+  margin: 10px 0px 25px 0px;
+}
+
+.form_checkout textarea:focus {
+  border: none;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.order_reviews {
+  color: #666666;
+}
+
+.order_reviews p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order_cart-shipping span:nth-child(1) {
+  font-weight: 700;
+}
+
+.order_cart-subtotal {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.order_cart-total span {
+  font-weight: 700;
+}
+
+.order_cart-total span:nth-child(2) {
+  color: #f30c28;
+}
+
+.select_payment {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.select_payment li:nth-child(1) {
+  padding-bottom: 10px;
+}
+
+.select_payment li:nth-child(2) {
+  border-top: 1px solid #ececec;
+  padding-top: 10px;
+}
+
+.select_payment-inp {
+  color: red;
+}
+
+.select_payment label {
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.qr_code {
+  background-image: url("../img/qr-frame.jpg");
+  background-position: 50% 50%;
+  width: 224px;
+  height: 238px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  float: right;
+  min-height: 100%;
+}
+
+.qr_code img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12%;
+}
+
+.transfer_extend {
+  height: 250px;
+}
+
+.order_reviews button {
+  display: block;
+  margin: 15px auto 0px auto;
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(0, 204, 255);
+  color: white;
+  font-size: 16px;
+}
+
+.order_reviews button:hover {
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3s;
+}
+
+.imgUserSelector:hover~.formSelectUser {
+  z-index: 102;
+  top: 80%;
+}
+
+.formSelectUser {
+  position: absolute;
+  z-index: -1;
+  top: -500px;
+  background: #898989;
+  text-align: center;
+  border-radius: 5px;
+
+  li {
+    width: 160px;
+    padding: 4px 0;
+    color: #d4d4d4;
+
+    &:hover {
+      color: rgb(230, 230, 230);
+    }
+  }
+
+  &:hover {
+    z-index: 102;
+    top: 80%;
+  }
+}
+
+.guide-shoes-board {
+  z-index: -1;
+  opacity: 0;
+  position: relative;
+  top: 15%;
+  left: 25vw;
+}
+
+#guide_shoe:checked~.guide-shoes-board {
+  z-index: 11;
+  opacity: 1;
+  position: fixed;
+  top: 15%;
+  left: 25vw;
+  transition: all 0.3s;
+}
+
+#guide_shoe:checked~.display-guide-shoe {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #0000001a;
+}
+
+.borderQuantity {
+  transform: scale(1.3);
+}
+
+.product-new {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-new {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * vuttonar(--bs-gutter-x));
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+/* App.css */
+.quantity-container {
+  
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  width: 120px;
+  margin-left: 60px;
+}
+
+.quantity-button {
+  background-color: #f4f4f4;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0px 8px 2px;
+  transition: background-color 0.2s;
+  border: 1px solid #dbd4d4;
+  height: 35px;
+}
+
+.quantity-button:hover {
+  background-color: #e6e6e6;
+}
+
+.quantity-input {
+  border: none;
+  text-align: center;
+  width: 50px;
+  font-size: 16px;
+}
+
+.scrollDasboard {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #b4b4b4aa;
+    border-radius: 10px;
+  }
+}
+
+.selector-Views {
+
+  & h3{
+    font-family: fantasy;
+  }
+}
+
+.setSize-1{
+  width: 12%;
+}
+
+.setSize-2{
+  width: 40%;
+  background-color: rgb(1, 115, 185);
+}
+
+.headerAdmin{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  right: 0;
+  background: #ffffff;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.order p {
+  font-size: 20px;
+}
+
+.disabled-button {
+  background-color: gray;
+  color: lightgray;
+}
+
+.confirm-button {
+  background-color: blue;
+  color: white;
+}
+
+.cancel-button {
+  background-color: red;
+  color: white;
+}
+

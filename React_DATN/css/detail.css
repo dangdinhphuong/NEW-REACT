@@ -1,0 +1,259 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  border-radius: 999px;
+  color: black;
+  left: 0px;
+}
+
+.swiper-button-prev:hover {
+  background-color: #cfcfcf;
+}
+
+.swiper-button-next:hover {
+  background-color: #cfcfcf;
+}
+
+.swiper-button-next {
+  width: 45px;
+  height: 45px;
+  border-radius: 999px;
+  color: black;
+  right: 0px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#x {
+  opacity: 1;
+}
+
+select {
+  outline: none;
+}
+
+select option:checked {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.inp_group {
+  display: flex;
+  margin-left: 40px;
+}
+
+.inp_group button {
+  border: none;
+  background-color: white;
+}
+
+.inp_group button:hover {
+  color: red;
+}
+
+.price-box {
+  margin: 15px 10px 0px 0px;
+}
+
+/* css color size */
+/* CSS cho phần tử active */
+.label_active {
+  border: 2px solid black;
+  transform: scale(1.1);
+}
+
+/* CSS cho danh sách các màu */
+.color-option {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* CSS cho danh sách các kích thước */
+.size-option {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.select-catagory label {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+/* css comment - product detail */
+
+.cm {
+  width: 1290px;
+  height: 245px;
+  margin: 20px auto;
+}
+
+.cm_title {
+  font-size: 25px;
+}
+
+.comments {}
+
+.comment_detail {
+  width: 65%;
+  border-bottom: 1px solid #efefef;
+margin-bottom: 22px;
+}
+
+.comment_detail_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user_cm {
+  display: flex;
+  align-items: center;
+}
+
+.user_cm_avt {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  margin-right: 10px;
+}
+
+.user_cm_inf p {
+  margin: 0;
+}
+
+.user_cm_name {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.favorites {}
+
+.favorites p {
+  margin: 0;
+  border: 1px solid red;
+  padding: 8px 14px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.favorites svg {
+  display: inline;
+  font-size: 20px;
+  color: red;
+  margin-top: -4px;
+}
+
+.favorites span {
+  font-size: 18px;
+  color: red;
+}
+
+.comment_content {
+  margin-top: 10px;
+}
+
+.comment_form {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.comment_form textarea {
+  padding: 10px 20px;
+  outline: auto;
+}
+
+.comment_form button {
+  display: block;
+  background-color: #a4e5ff;
+  float: right;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  overflow: hidden;
+}

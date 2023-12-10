@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "name": "Giày 1",
+      "price": "200",
+      "image": "vvvv",
+      "original_price": "230",
+      "description": "Đây là giày 1",
+      "inventory_number": "20",
+      "size": "38",
+      "color": "Xanh ",
+      "imgUrl": "https://images.hdqwalls.com/wallpapers/thumb/nike-sneakers-illustration-5k-q6.jpg",
+      "id": 4
+    },
+    {
+      "name": "Giày 2",
+      "price": "250",
+      "imgUrl": "https://images.hdqwalls.com/wallpapers/thumb/nike-sneakers-illustration-5k-q6.jpg",
+      "original_price": "300",
+      "description": "Đây là giày 2",
+      "inventory_number": "10",
+      "size": "39",
+      "color": "Tím",
+      "id": 5
+    },
+    {
+      "name": "Giày 3",
+      "price": "100",
+      "imgUrl": "https://images.hdqwalls.com/wallpapers/thumb/nike-shoes-ground-football-2s.jpg",
+      "original_price": "150",
+      "description": "Đây là giày 3",
+      "inventory_number": "15",
+      "size": "40",
+      "color": "Đỏ",
+      "id": 6
+    }
+  ],
+  "colors": [
+    {
+      "color_id": 1,
+      "name": "Red"
+    },
+    {
+      "color_id": 2,
+      "name": "Blue"
+    }
+  ]
+}
